@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <div class="container-links">
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#habilidades">Minhas habilidades</a></li>
+                    <li><a href="#projetos">Meus projetos</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <title>Meu portifólio</title>
+        <h1>Bem-vindo ao meu portifólio</h1>
+        <section id="sobre"></section>
+        <h2>Sobre mim:</h2> <p>Me chamou Miguel,natural de Porto Alegre, Rio Grande Do Sul, tenho 12 anos e sou estudante do sexto ano do ensino fundamental.<br>Tenho mínimo conhecimento em back-end e um conhecimento superior em front-end.<br>Comecei em programação a pouco tempo e quero ser desenvolvedor de sites em geral, mobile e pc.<br> E é isso por enquanto isso é tudo sobre mim.</p>
+        </section>
+        <section id="habilidades">
+        <h3>Minhas habilidades:</h3>
+        <ul>
+    <li>Node.Js(Mínimo)</li>
+    <li>HTML(Maior que Node.Js)</li>
+    <li>CSS(Mínimo)</li>
+    <li>Java Script(Básico)</li>
+    </ul>
+    </section>
+    <img src ="https://www.ideianoar.com.br/wp-content/uploads/2021/05/programador-marketplace.jpg">
+    <section id="projetos">
+    <h2>Meus projetos</h2>
+    <div class="galeria">
+        <div class="projeto">
+            <img src="https://www.eucapacito.com.br/wp-content/uploads/2024/04/Programacao-em-Python.-Algoritmos.jpg" alt="Projeto 1">
+            <p>Projeto Exemplo 1</p>
+            </div>
+            <div class="projeto">
+                <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhAGrEk_1EZIDF6UNn4MBN6Vz68_jgJ3YLO8zcsqZQNS1u6jMWpnKFgqQayiB5gewFN0E&usqp=CAU">
+                <p>Projeto Exemplo 2</p>
+            </div>
+                <div class="projeto">
+                    <img src="https://www.digitow.com.br/wp-content/uploads/2021/01/cursos-de-programacao-para-iniciantes.jpg" alt="Projeto 3">
+                    <p>Projeto Exemplo 3</p>
+                    </div>
+                    </div>
+                    </section>
+            
+    <style>
+        
+        html {
+  scroll-behavior: smooth;
+}
+
+        body {
+            background-color: rgb(34, 34, 100);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align:center;}
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            color: white;
+        text-decoration: none;
+        transition: 0.3;
+        }
+        a:hover{
+            opacity: 0.7;
+        }
+        .sobre{
+             font-size:  24px  ;
+             text-transform:uppercase ;
+             letter-spacing: 4px;
+        }
+        nav{
+            display:flex;
+            justify-content:space-around ;
+            align-items: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background:black ;
+            height: 8vh;
+        }
+        nav-list{
+            list-style: none;
+            display: flex;
+        }
+        nav-list li{
+letter-spacing:3px ;
+margin-left: 32px;
+        }
+            .container-links{
+              display: flex;  
+              gap: 20px;
+              justify-content: center;
+              align-items: center;
+            }
+        h1{
+            color:rgb(255, 255, 255);
+            margin: 20px;
+            padding: 10px;
+        }
+        h2{
+            color:rgb(255, 255, 255);
+            margin: 20px;
+            padding: 10px;
+        }
+        h3{
+            color:rgb(255, 255, 255);
+            margin: 20px;
+            padding: 10px;
+        }
+        p{
+            color:rgb(255, 255, 255);
+            margin:20px;
+            padding: 10px;
+        }
+        ul{
+            color:rgb(255, 255, 255);
+            margin: 20px;
+            padding: 10px;
+        }
+        ul{
+            list-style-position: inside;
+        }
+        img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgb(118, 118, 128);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.05);             
+  box-shadow: 0 10px 20px rgba(34, 34, 100,);
+}
+#projetos {
+            text-align: center;
+  padding: 40px 20px;
+  background-color: rgb(34, 34, 100);
+        }
+
+        #projetos h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color:#ffffff;
+        }
+        .galeria{
+            display:flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .projeto {
+  width: 300px;
+  text-align: center;
+        }      
+  .projeto img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3 ease-in-out,box-shadow 0.3 ease in ease-out;
+        }
+       .projeto img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4);
+        }
+        .projeto p {
+  margin-top: 10px;       
+  color: #ffffff;         
+  font-size: 16px;        
+  font-weight: bold;      
+  text-align: center;     
+}
+  
+    
+
+        </style>
+    </body>
+</html>
