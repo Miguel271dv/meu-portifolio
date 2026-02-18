@@ -24,7 +24,7 @@ st.write("""
 - Dashboard com gráficos de despesas por categoria
 - Deploy online com Streamlit
 """)
-st.link_button("🔗 Ver projeto online", "https://controle-financas-3.onrender.com/")
+st.link_button("🔗 Ver projeto online", "https://controle-financas-3.onrender.com")
 with st.container():
     st.subheader("Controle Financeiro PRO")
     st.write("""
@@ -44,7 +44,7 @@ st.write("""
 - Armazenamento em CSV
 - Deploy online com Streamlit         
 """)
-st.link_button("🔗 Ver projeto online", "https://python-cadastro-1.onrender.com/")
+st.link_button("🔗 Ver projeto online", "https://python-cadastro-1.onrender.com")
 with st.container():
     st.subheader("Sistema de cadastro de clientes")
     st.write("""
