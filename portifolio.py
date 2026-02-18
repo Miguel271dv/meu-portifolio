@@ -1,36 +1,22 @@
 import streamlit as st
 
-st.set_page_config(page_title="Miguel - Portfólio", page_icon="🚀")
+st.set_page_config(page_title="Miguel - Portifólio", page_icon="🚀")
 
 # ================== Título ==================
 st.title("🚀 Miguel - Desenvolvedor Python")
 st.divider()
 
 # ================== Sobre ==================
-st.header("📌 Sobre mim")
+st.header("📌Sobre mim")
 st.write("""
-Sou estudante de Python focado em desenvolvimento backend. Tenho experiência com validação de dados, git, deploy na web e desenvolvimento de sistemas interativos com Streamlit.
+Sou estudante de Python focado em desenvolvimento backend. Tenho experiência com validação de dados, git e deploy na web.
 """)
 st.divider()
 
 # ================== Projetos ==================
 st.header("💻 Projetos")
 
-# Projeto 1 - Sistema de Cadastro de Clientes
-st.subheader("📋 Sistema de Cadastro de Clientes")
-st.write("""
-- Validação de nome e endereço
-- Bloqueio de datas futuras
-- Armazenamento em CSV
-- Deploy online com Streamlit         
-""")
-st.link_button("🔗 Ver projeto online", "https://python-cadastro-1.onrender.com/")
-st.write("""
-Este projeto consiste em um cadastro simples, você pode informar sua data de nascimento, nome, endereço e se é pessoa física ou jurídica, feito inteiramente em Streamlit (Python).
-""")
-st.divider()
-
-# Projeto 2 - Controle Financeiro PRO
+# Projeto 1 - Controle Financeiro PRO
 st.subheader("💰 Controle Financeiro PRO")
 st.write("""
 - Cadastro de receitas e despesas
@@ -38,8 +24,10 @@ st.write("""
 - Dashboard com gráficos de despesas por categoria
 - Deploy online com Streamlit
 """)
-st.link_button("🔗 Ver projeto online", "https://seu-app.onrender.com/")
-st.write("""
+st.link_button("🔗 Ver projeto online", "https://controle-financas-3.onrender.com/")
+with st.container():
+    st.subheader("Controle Financeiro PRO")
+    st.write("""
 Este projeto é um sistema financeiro completo, onde é possível:
 - Criar contas de usuário e fazer login
 - Adicionar receitas e despesas em diferentes categorias
@@ -48,13 +36,27 @@ Este projeto é um sistema financeiro completo, onde é possível:
 """)
 st.divider()
 
+# Projeto 2 - Sistema de Cadastro de Clientes
+st.subheader("📋 Sistema de Cadastro de Clientes")
+st.write("""
+- Validação de nome e endereço
+- Bloqueio de datas futuras
+- Armazenamento em CSV
+- Deploy online com Streamlit         
+""")
+st.link_button("🔗 Ver projeto online", "https://python-cadastro-1.onrender.com/")
+with st.container():
+    st.subheader("Sistema de cadastro de clientes")
+    st.write("""
+Este projeto consiste em um simples cadastro, você pode informar sua data de nascimento, nome, endereço e se é pessoa física ou jurídica, feito inteiramente em Streamlit (Python).
+""")
+st.divider()
+
 # ================== Tecnologias ==================
 st.header("🛠 Tecnologias")
 st.write("""
 - Python
 - Streamlit
-- Pandas
-- Matplotlib
 - GitHub  
 """)
 st.divider()
@@ -70,3 +72,5 @@ with col1:
     st.metric("Projetos", "2")
 with col2:
     st.metric("Linguagens", "1")
+    
+st.divider()
